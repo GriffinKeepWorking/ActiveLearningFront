@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000"> 
+    <link rel="icon" href=""/>
+    <link rel="shortcut icon" href=""/>
+    <script type='text/javascript' src='https://s3.amazonaws.com/mturk-public/externalHIT_v1.js'></script>
+    <script type="text/javascript">
+      var time=0;
+      var t;
+      function timeCount(){
+        var minute = 0;
+        var second = 0;
+        if(time > 60){
+          minute = parseInt(time/60);
+          second = parseInt(time%60);
+        }
+        else{
+          second = time;
+        }
+        if(minute <10){
+          if(second < 10){
+            document.getElementById('duration').innerHTML= "0" +minute + ":" + "0" + second;
+          }
+          else{
+            document.getElementById('duration').innerHTML= "0" +minute + ":" + second;
+          }
+        }
+        else{
+          document.getElementById('duration').innerHTML=minute + ":" + second;          
+        }
+        time=time+1;
+        t=setTimeout("timeCount()",1000);
+      }
+
+        
+
+    </script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <title>React App without Node JS</title>
+  </head>
+  <body onload="timeCount()">
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript> <div class="topnav">
+  Does the image contain a dog?
+  <div id="duration" style="float:right"> 
+  </div>
+  </div>
+
+      <div class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left" style="display:none" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+    <div class="w3-bar-item"><div>Instructions:</div>
+    <div>Answering the question by pressing left/right arrow key:</div>
+    <div>Left arrow key means “YES” to the question;</div>
+    <div>Right arrow key means “NO” to the question.</div>
+    <div>Notice: the amount of time spent on each image would be recorded.</div>
+    <div>Do as fast as you can!!!</div>
+    <div>Click on submit button below when finished.</div>
+    
+      </div>
+  <form name='mturk_form' method='post' id='mturk_form' action='https://workersandbox.mturk.com/mturk/externalSubmit'>
+    <input type='hidden' value='' name='assignmentId' id='assignmentId'/>
+  <br/>
+        <div class='text'>First name:</div>
+  <input class='inputBar' type="text" name="firstname" value="Mickey">
+    <p>
+        <input class='button' type="submit" value="Submit">
+    </p >
+      <script language='Javascript'>turkSetAssignmentID();</script>
+    </form> 
+  </div>
+  <div>
+  <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+  </div>
+  </div>
+  
+  
+  <script>
+
+    function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    }
+    function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
+
+    <div id = "root"></div>
+      <!-- <div id="root"></div> -->
+
+    
+  <script type="text/javascript" src="index_bundle.js"></script><script type="text/javascript" src="index_bundle.js"></script></body>
+</html>

@@ -1,0 +1,8 @@
+export const FETCH_URL = 'FETCH_URL';
+export const CHANGE_COUNT = 'CHANGE_COUNT';
+export const INITIALISE_COUNT = 'INITIALISE_COUNT';
+export const INITIALISE_TIME = 'INITIALISE_TIME';
+export const CHANGE_TIME = 'CHANGE_TIME';
+export const INITIALISE_START = 'INITIALISE_START';
+export const CHANGE_START = 'CHANGE_START';
+// export const NEW_POST = 'NEW_POST';

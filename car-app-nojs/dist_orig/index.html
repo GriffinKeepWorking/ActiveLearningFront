@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000"> 
+    <link rel="icon" href=""/>
+    <link rel="shortcut icon" href=""/>
+    <script type='text/javascript' src='https://s3.amazonaws.com/mturk-public/externalHIT_v1.js'></script>
+    <!-- <script type="text/javascript" src = "getUrlVars.js"></script> -->
+
+    <title>React App without Node JS</title>
+  </head>
+  <body>
+    <!-- <script language='Javascript'>getUrlVars();</script> -->
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+      <div id = "root"></div>
+      <!-- <div id="root"></div> -->
+    <form name='mturk_form' method='post' id='mturk_form' action='https://workersandbox.mturk.com/mturk/externalSubmit'>
+    <input type='hidden' value='' name='assignmentId' id='assignmentId'/>
+      <!-- ID = {getUrlVars()["id"]}<br> -->
+        <input type="text" name="firstname" value="Mickey">
+        <br>
+      <p>
+        <input type="submit" value="Submit">
+      </p>
+      <script language='Javascript'>turkSetAssignmentID();</script>
+    </form> 
+    
+  <script type="text/javascript" src="index_bundle.js"></script></body>
+</html>

@@ -1,0 +1,81 @@
+.image {
+	height: 100%;
+	max-width: 70%;
+	position: center;
+    background-repeat: no-repeat;
+    size: cover;
+}
+
+.centered-div {
+	text-align: center;
+}
+
+.container {
+	width: 100%;
+	height: 80%
+}
+
+.centered {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  /*height: 80%;*/
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.column1 {
+    float: left;
+    width: 15%;
+    background-color: rosybrown;
+}
+
+.column2 {
+    float: left;
+    width: 70%;
+}
+
+.column3 {
+    float: left;
+    width: 15%;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.leftpane {
+    width: 15%;
+    height: 80%;
+    /*border-right: 100px;*/
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    /*transform: translateY(-50%);*/
+    /*padding: 10px;*/
+    /*transform: translate(50%, 50%);*/
+    float: left;
+    background-color: rosybrown;
+    /*border-collapse: collapse;*/
+}
+
+.middlepane {
+    width: 70%;
+    height: 100%;
+    float: left;
+    display: inline-block;
+    background-color: royalblue;
+    border-collapse: collapse;
+}
+
+.rightpane {
+  width: 15%;
+  height: 100%;
+  position: relative;
+  float: left;
+  display: inline-block;
+  /*background-color: yellow;*/
+  border-collapse: collapse;
+}
